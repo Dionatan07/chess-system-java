@@ -6,6 +6,7 @@ import chess.ChessPiece;
 import chess.ChessPosition;
 
 import java.util.InputMismatchException;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Program {
@@ -13,6 +14,8 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
         ChessMatch chessMatch = new ChessMatch();
+        Locale.setDefault(Locale.US);
+
 
         while (true) {
             try {
